@@ -1,0 +1,6 @@
+export { default as Header } from '../Sections/Header/Header'
+export { default as Slider } from '../Sections/Slider/slider.js'
+export { default as Hero } from '../Sections/Hero/Hero.js'
+export { default as Actualities } from '../Sections/Actualities/Actualities.js'
+export { default as Footer } from '../Sections/Footer/Footer'
+export { default as Admin } from '../Sections/Admin/Admin.js'

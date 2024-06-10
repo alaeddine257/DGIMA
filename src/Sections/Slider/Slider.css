@@ -1,0 +1,37 @@
+.carousel-container {
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.carousel-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    filter: blur(0);
+    /* Réinitialise le flou par défaut */
+    /* Applique le flou aux extrémités horizontales */
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    /* Assurez-vous que le flou n'est pas appliqué aux coins arrondis du Carousel */
+    border-radius: 0;
+}
+
+
+/* Styles pour rendre le slider responsive */
+
+@media (max-width: 768px) {
+    .carousel-container {
+        margin-bottom: 40px;
+    }
+    .carousel-image {
+        height: 300px;
+        /* Ajuste la hauteur de l'image pour s'adapter à la taille de l'écran */
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-image {
+        height: 200px;
+        /* Ajuste la hauteur de l'image pour s'adapter à la taille de l'écran */
+    }
+}

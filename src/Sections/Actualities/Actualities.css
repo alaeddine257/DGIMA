@@ -1,0 +1,133 @@
+/* Custom.css */
+
+.section-wrapper {
+    max-width: 2000px;
+    margin-bottom: 150px;
+    padding: 2rem;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.section-header .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #111827;
+}
+
+.section-header .button {
+    background-color: #830709;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.section-header .button:hover {
+    background-color: #e62129;
+}
+
+.actualities {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .actualities {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+.actuality {
+    position: relative;
+}
+
+.card-wrapper {
+    position: relative;
+    background-color: #fbfbfa;
+    border: 1px solid #d1d5db;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.card-wrapper:hover {
+    transform: translateY(-5px);
+}
+
+.card-wrapper .card-img {
+    width: 65%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1.5rem;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.card-wrapper .card-content {
+    padding: 1.5rem;
+}
+
+.card-wrapper .date {
+    font-size: 0.75rem;
+    color: #6b7280;
+}
+
+.card-wrapper .card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #111827;
+    margin-top: 0.5rem;
+}
+
+.card-wrapper .description {
+    font-size: 0.875rem;
+    color: #4b5563;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+
+.card-wrapper .see-more {
+    background-color: #830709;
+    color: white;
+    border: none;
+    border-radius: 0.75rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.card-wrapper .see-more svg {
+    stroke: currentColor;
+    fill: currentColor;
+    stroke-width: 0;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+}
+
+.card-wrapper .see-more:hover {
+    background-color: #e62129;
+    border-radius: 0.85rem;
+}
